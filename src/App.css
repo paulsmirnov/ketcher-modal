@@ -4,16 +4,61 @@ html, body, #root {
   margin: 0;
 }
 
-.ModalDialog {
+.Modal {
+  background-color: #7f7f7f;
+
+  /* bootstrap: */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1100;
+  outline: 0;
+}
+
+.Dialog {
   background-color: #ffcfff;
+
+  /* bootstrap: */
+  position: relative;
+  width: 80%;
+  margin: 1.75rem auto;
 }
 
-.ModalContent {
+.DialogCentered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 3.5rem);
+}
+
+.Content {
   background-color: #ffffcf;
+
+  /* bootstrap: */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
 }
 
-.ModalBody {
+.Body {
   background-color: #cfffff;
   padding: 0;  /* no need for padding around the ketcher */
-  height: calc(80vh - 4.5rem);  /* 90% of viewport + allow for footer height */
+  height: calc(80vh - 4.5rem);  /* 80% of viewport + allow for footer height */
+
+  /* bootstrap: */
+  position: relative;
+  flex: 1 1 auto;
+  /* padding: 1rem; */
+}
+
+.Footer {
+  height: 4.5rem;
 }
