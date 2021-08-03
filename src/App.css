@@ -3,3 +3,16 @@ html, body, #root {
   height: 100%;
   margin: 0;
 }
+
+.ModalDialog {
+  background-color: #ffcfff;
+}
+
+.ModalContent {
+  background-color: #ffffcf;
+}
+
+.ModalBody {
+  background-color: #cfffff;
+  padding: 0;  /* no need for padding around the ketcher */
+}
