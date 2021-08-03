@@ -15,4 +15,5 @@ html, body, #root {
 .ModalBody {
   background-color: #cfffff;
   padding: 0;  /* no need for padding around the ketcher */
+  height: calc(80vh - 4.5rem);  /* 90% of viewport + allow for footer height */
 }
